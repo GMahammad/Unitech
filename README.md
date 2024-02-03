@@ -2,7 +2,7 @@
     <h2>Description</h2>
     <p>
       Unitech app is a banBking app which is mdp product of the banking services
-      and back-end service
+      and back-end service. Also correction of calculation, converting and transfering process was handled carefully with BigDecimal data type.
     </p>
     <h2>Installing</h2>
     <p>Firstly you have to clone this github repo to your local machine. Also <b>Docker Desktop</b> should be installed in your PC</p>
@@ -17,7 +17,7 @@
             </li>
             <li>
                 <b>Step 3:</b> <br>
-                As a next step you have to open a new terminal and change directory to the main folder which you cloned from github. For this time change directory to currencyapi folder and run mvn spring-boot:run command. This will compile the third-party Currency API mock service.
+                As a next step you have to open a new terminal and change directory to the main folder which you cloned from github. For this time change directory to currencyapi folder and run <b> mvn spring-boot:run </b>command. This will compile the third-party Currency API mock service.
             </li>
            <li><b>Final Step:</b> <br>
                 You have already compiled both modules and right now you can test them with sending request to specific paths. I added below all pathes which can be tested by any one.
@@ -63,6 +63,32 @@
     <p>
       Reliability of Unitech app is provided with unit and integration tests. The minimum coverage for our app is apprx 70%. There are 24 tests and if you want to run these test you have to change directory to main folder(Unitech). After that you have to run <b>mvn test</b> command, so this command will build all test cases. 
     </p>
+    <h2>Path</h2>
+    <p>As I mentioned before, I added below all possible testing paths.Moreover I mentioned database username and password, so you can check database too.</p> <br>
+    <p> Ports:</p>
+    <ul>
+      <li>unitech: 8081</li>
+      <li>currencyapi: 8082</li>
+    </ul>
+      <p> Database:</p>
+    <ul>
+      <li>username: unitech</li>
+      <li>password: password</li>
+    </ul>
+    <ul>
+      <li>-ADMIN Only- GET all registered users -> localhost:8081/api/v1/auth/users</li>
+      <li>Registration POST request. You have to send pin and password for registering -> localhost:8081/api/v1/auth/register</li>
+      <li>Login POST request. Send registered pin and password in body -> localhost:8081/api/v1/auth/login</li>
+      <li>Get all active account of user -> localhost:8081/api/v1/account/myaccounts</li>
+      <li>-ADMIN Only- Get all accounts in the system -> localhost:8081/api/v1/account/allaccounts</li>
+      <li>-ADMIN Only- Change account status-> localhost:8081/api/v1/account/changeaccountstatus</li>
+      <li>-ADMIN Only- Create a new account. You have to add account userPin (for which user), balance, and currency. -> localhost:8081/api/v1/account/createaccount</li>
+      <li>-ADMIN Only- Get all transactions -> localhost:8081/api/v1/transaction/transactions</li>
+      <li>Get current exhange rate for selected currencies -> localhost:8081/api/v1/currency/rate?from=EUR&to=AZN</li>
+      <li>Make transfer to another account. You must add senderAccount, receiverAccount and transactionBalance. -> localhost:8081/api/v1/transaction/send</li>
+      <li>If you want to check currencyAPI itself -> localhost:8082/tpapi/v1/rate</li>
+    </ul>
+    
 
 
 
