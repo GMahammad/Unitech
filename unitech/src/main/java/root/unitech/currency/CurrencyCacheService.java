@@ -55,7 +55,7 @@ public class CurrencyCacheService {
                         .body(fromCurrency + "/" + toCurrency + " = " + cacheManager.getCache("exchangeRates").get(fromCurrency + "/" + toCurrency).get());
             }
 
-            String url = String.format("http://localhost:8081/tpapi/v1/rate?fromCurrency=%s&toCurrency=%s",
+            String url = String.format("http://localhost:8082/tpapi/v1/rate?fromCurrency=%s&toCurrency=%s",
                     fromCurrency, toCurrency);
 
             ResponseEntity checkedRest = getCheckedRest(url);
