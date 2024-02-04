@@ -5,13 +5,13 @@
       and back-end services. Also, the correction of calculation, converting, and transferring process was handled carefully with BigDecimal data type.
     </p>
     <h2>Installing</h2>
-    <p>Firstly you have to clone this GitHub repo to your local machine. Ensure that <b>Docker Desktop</b> and <b>Maven</b> have been installed in your PC.</p>
+    <p>Firstly you have to clone this GitHub repo to your local machine. Ensure that <b>Docker Desktop</b>, <b>Maven</b> and <b>JDK</b> have been installed in your PC.</p>
     <h2>Usage</h2>
     <p>
         <ul>
             <li>
                 <b>Step 1:</b> <br>
-                Initially open Docker Desktop app and a local terminal, change the directory to the exact github repository. In the root component you have to run <b>docker-compose up -d</b>  command. This command will fetch images and create a Docker container inside of the Docker Desktop application.
+                Initially open Docker Desktop app and a local terminal, change the directory to the exact github repository and firstly run <b>mvn clean install</b> command. Next, the root component you have to run <b>docker-compose up -d</b>  command. This command will fetch images and create a Docker container inside of the Docker Desktop application.
             </li>
             <li> <b>Step 2:</b> <br>            After creating the docker container you have to change direction to(there are 2 modules unitech and currencyapi) unitech folder inside of this style Rectory you have to run <b>mvn spring-boot:run</b>  command and this command will compile our main unitech module.
             </li>
