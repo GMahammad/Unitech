@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6948e01-b774-45a1-8742-e5c947faff89" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unitech/src/main/java/root/unitech/currency/CurrencyCacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/unitech/src/main/java/root/unitech/currency/CurrencyCacheService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
