@@ -13,7 +13,7 @@
                 <b>Step 1:</b> <br>
                 Initially open Docker Desktop app and a local terminal, change the directory to the exact github repository and firstly run <b>mvn clean install</b> command. Next, the root component you have to run <b>docker-compose up -d</b>  command. This command will fetch images and create a Docker container inside of the Docker Desktop application.
             </li>
-            <li> <b>Step 2:</b> <br>            After creating the docker container you have to change direction to(there are 2 modules unitech and currencyapi) unitech folder inside of this style Rectory you have to run <b>mvn spring-boot:run</b>  command and this command will compile our main unitech module.
+            <li> <b>Step 2:</b> <br>            After creating the docker container you have to change direction to(there are 2 modules unitech and currencyapi) unitech folder inside of this directory you have to run <b>mvn spring-boot:run</b>  command and this command will compile our main unitech module.
             </li>
             <li>
                 <b>Step 3:</b> <br>
