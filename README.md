@@ -5,13 +5,13 @@
       and back-end services. Also, the correction of calculation, converting, and transferring process was handled carefully with BigDecimal data type.
     </p>
     <h2>Installing</h2>
-    <p>Firstly you have to clone this GitHub repo to your local machine. Ensure that <b>Docker Desktop</b> and <b>Maven</b> have been installed in your PC</p>
+    <p>Firstly you have to clone this GitHub repo to your local machine. Ensure that <b>Docker Desktop</b> and <b>Maven</b> have been installed in your PC.</p>
     <h2>Usage</h2>
     <p>
         <ul>
             <li>
                 <b>Step 1:</b> <br>
-                Initially open a local terminal, and change the directory to the exact github repository. In the root component you have to run <b>docker-compose up -d</b>  command. This command will fetch images and create a Docker container inside of the Docker Desktop application.
+                Initially open Docker Desktop app and a local terminal, change the directory to the exact github repository. In the root component you have to run <b>docker-compose up -d</b>  command. This command will fetch images and create a Docker container inside of the Docker Desktop application.
             </li>
             <li> <b>Step 2:</b> <br>            After creating the docker container you have to change direction to(there are 2 modules unitech and currencyapi) unitech folder inside of this style Rectory you have to run <b>mvn spring-boot:run</b>  command and this command will compile our main unitech module.
             </li>
@@ -86,5 +86,5 @@
       <li>-ADMIN Only- Get all transactions -> localhost:8081/api/v1/transaction/transactions</li>
       <li>Get current exchange rate for selected currencies -> localhost:8081/api/v1/currency/rate?from=EUR&to=AZN</li>
       <li>Make a transfer to another account. You must add senderAccount, receiverAccount and transactionBalance. -> localhost:8081/api/v1/transaction/send</li>
-      <li>If you want to check currencyAPI itself -> localhost:8082/tpapi/v1/rate</li>
+      <li>If you want to check currencyAPI itself -> localhost:8082/tpapi/v1/rate?fromCurrency=USD&toCurrency=AZN</li>
     </ul>
